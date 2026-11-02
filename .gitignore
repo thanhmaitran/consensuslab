@@ -1,0 +1,30 @@
+# Build artifacts
+/bin/
+/build/
+/dist/
+/coverage/
+/tmp/
+
+# Test and experiment output
+*.test
+*.prof
+*.out
+*.log
+/results/raw/
+/results/tmp/
+/results/runs/
+
+# Frontend
+node_modules/
+web/dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
