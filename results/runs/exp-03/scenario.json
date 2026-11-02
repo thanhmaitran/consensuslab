@@ -1,0 +1,40 @@
+{
+  "id": "EXP-03",
+  "description": "A 5-node cluster is split 3/2 with the leader placed in the 2-node minority, then healed. The 3-node majority must elect a new leader, the isolated leader must not commit, and logs must converge after healing.",
+  "node_counts": [
+    5
+  ],
+  "seeds": 30,
+  "seed_base": 1,
+  "duration_ms": 12000,
+  "election_timeout_ms": [
+    150,
+    300
+  ],
+  "heartbeat_ms": 50,
+  "network": {
+    "base_delay_ms": 10,
+    "jitter_ms": 5,
+    "message_loss_probability": 0
+  },
+  "faults": [
+    {
+      "at_ms": 3000,
+      "type": "partition",
+      "group_sizes": [
+        3,
+        2
+      ],
+      "isolate_leader": true
+    },
+    {
+      "at_ms": 7000,
+      "type": "heal"
+    }
+  ],
+  "workload": {
+    "commands": 100,
+    "start_ms": 2000,
+    "interval_ms": 80
+  }
+}
