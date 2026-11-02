@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConsensusLab run record",
+  "description": "One line of runs.jsonl. Nullable fields are null when the quantity could not be measured in that run; they are never filled with 0.",
+  "type": "object",
+  "required": ["experiment_id", "variant", "seed", "node_count", "fault", "status", "trace_hash"],
+  "properties": {
+    "experiment_id": { "type": "string" },
+    "variant": { "type": "string" },
+    "seed": { "type": "integer" },
+    "node_count": { "type": "integer", "minimum": 1, "maximum": 7 },
+    "fault": { "type": "string" },
+    "status": { "enum": ["ok", "error"] },
+    "error": { "type": "string" },
+    "election_latency_ms": { "type": ["number", "null"] },
+    "reelection_latency_ms": { "type": ["number", "null"] },
+    "commit_latency_ms_p50": { "type": ["number", "null"] },
+    "commit_latency_ms_p95": { "type": ["number", "null"] },
+    "commit_latency_ms_p99": { "type": ["number", "null"] },
+    "commands_submitted": { "type": "integer" },
+    "commands_committed": { "type": "integer" },
+    "throughput_commands_per_second": { "type": ["number", "null"] },
+    "recovery_time_ms": { "type": ["number", "null"] },
+    "elections_started": { "type": "integer" },
+    "failed_elections": { "type": "integer" },
+    "messages_sent": { "type": "integer" },
+    "messages_delivered": { "type": "integer" },
+    "message_delivery_rate": { "type": ["number", "null"] },
+    "safety_violations": { "type": "integer" },
+    "trace_hash": { "type": "string" },
+    "code_version": { "type": "string" }
+  }
+}
