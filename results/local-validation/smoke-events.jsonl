@@ -1,0 +1,201 @@
+{"event_id":1,"virtual_time_ms":0,"type":"NodeStarted","node_id":"node-1","term":0,"scenario_id":"SMOKE","seed":1}
+{"event_id":2,"virtual_time_ms":0,"type":"NodeStarted","node_id":"node-2","term":0,"scenario_id":"SMOKE","seed":1}
+{"event_id":3,"virtual_time_ms":0,"type":"NodeStarted","node_id":"node-3","term":0,"scenario_id":"SMOKE","seed":1}
+{"event_id":4,"virtual_time_ms":170,"type":"ElectionStarted","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"quorum":2}}
+{"event_id":5,"virtual_time_ms":170,"type":"NodeRoleChanged","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"from":"follower","to":"candidate"}}
+{"event_id":6,"virtual_time_ms":181.634306,"type":"VoteGranted","node_id":"node-2","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"candidate":"node-1"}}
+{"event_id":7,"virtual_time_ms":184.284283,"type":"VoteGranted","node_id":"node-3","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"candidate":"node-1"}}
+{"event_id":8,"virtual_time_ms":192.59644,"type":"NodeRoleChanged","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"from":"candidate","to":"leader"}}
+{"event_id":9,"virtual_time_ms":192.59644,"type":"LeaderElected","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"quorum":2,"votes_received":2}}
+{"event_id":10,"virtual_time_ms":203.577152,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":11,"virtual_time_ms":206.958029,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":12,"virtual_time_ms":217.880661,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":13,"virtual_time_ms":217.880661,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1}
+{"event_id":14,"virtual_time_ms":219.549934,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":15,"virtual_time_ms":260.220013,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1}
+{"event_id":16,"virtual_time_ms":263.488044,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":1,"scenario_id":"SMOKE","seed":1}
+{"event_id":17,"virtual_time_ms":1500,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-0 value-0"}}
+{"event_id":18,"virtual_time_ms":1500,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-0 value-0","command_id":1}}
+{"event_id":19,"virtual_time_ms":1511.231512,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":20,"virtual_time_ms":1513.358594,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":21,"virtual_time_ms":1523.000302,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":22,"virtual_time_ms":1523.000302,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1}
+{"event_id":23,"virtual_time_ms":1523.000302,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":23.000302}}
+{"event_id":24,"virtual_time_ms":1526.98893,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":25,"virtual_time_ms":1560.190802,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1}
+{"event_id":26,"virtual_time_ms":1562.656769,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":2,"scenario_id":"SMOKE","seed":1}
+{"event_id":27,"virtual_time_ms":1600,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-1 value-1"}}
+{"event_id":28,"virtual_time_ms":1600,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-1 value-1","command_id":2}}
+{"event_id":29,"virtual_time_ms":1610.171153,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":30,"virtual_time_ms":1610.626361,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":31,"virtual_time_ms":1622.408827,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":32,"virtual_time_ms":1622.408827,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1}
+{"event_id":33,"virtual_time_ms":1622.408827,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":22.408827}}
+{"event_id":34,"virtual_time_ms":1624.8634,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":35,"virtual_time_ms":1664.600167,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1}
+{"event_id":36,"virtual_time_ms":1664.996492,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":3,"scenario_id":"SMOKE","seed":1}
+{"event_id":37,"virtual_time_ms":1700,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-2 value-2"}}
+{"event_id":38,"virtual_time_ms":1700,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-2 value-2","command_id":3}}
+{"event_id":39,"virtual_time_ms":1711.2086,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":40,"virtual_time_ms":1713.469178,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":41,"virtual_time_ms":1722.759737,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":42,"virtual_time_ms":1722.759737,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1}
+{"event_id":43,"virtual_time_ms":1722.759737,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":22.759737}}
+{"event_id":44,"virtual_time_ms":1723.570953,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":45,"virtual_time_ms":1762.66921,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1}
+{"event_id":46,"virtual_time_ms":1764.226781,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":4,"scenario_id":"SMOKE","seed":1}
+{"event_id":47,"virtual_time_ms":1800,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-3 value-3"}}
+{"event_id":48,"virtual_time_ms":1800,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-3 value-3","command_id":4}}
+{"event_id":49,"virtual_time_ms":1812.554309,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":50,"virtual_time_ms":1813.514063,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":51,"virtual_time_ms":1826.437095,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":52,"virtual_time_ms":1826.437095,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1}
+{"event_id":53,"virtual_time_ms":1826.437095,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":26.437095}}
+{"event_id":54,"virtual_time_ms":1826.781039,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":55,"virtual_time_ms":1861.628177,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1}
+{"event_id":56,"virtual_time_ms":1864.597576,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":5,"scenario_id":"SMOKE","seed":1}
+{"event_id":57,"virtual_time_ms":1900,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-4 value-4"}}
+{"event_id":58,"virtual_time_ms":1900,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-4 value-4","command_id":5}}
+{"event_id":59,"virtual_time_ms":1910.361985,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":60,"virtual_time_ms":1910.371982,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":61,"virtual_time_ms":1922.196402,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":62,"virtual_time_ms":1922.196402,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1}
+{"event_id":63,"virtual_time_ms":1922.196402,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":22.196402}}
+{"event_id":64,"virtual_time_ms":1924.388717,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":65,"virtual_time_ms":1962.032164,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1}
+{"event_id":66,"virtual_time_ms":1963.868669,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":6,"scenario_id":"SMOKE","seed":1}
+{"event_id":67,"virtual_time_ms":2000,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-5 value-5"}}
+{"event_id":68,"virtual_time_ms":2000,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-5 value-5","command_id":6}}
+{"event_id":69,"virtual_time_ms":2013.594587,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":70,"virtual_time_ms":2014.895308,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":71,"virtual_time_ms":2027.042311,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":72,"virtual_time_ms":2027.042311,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1}
+{"event_id":73,"virtual_time_ms":2027.042311,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":27.042311}}
+{"event_id":74,"virtual_time_ms":2028.097238,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":75,"virtual_time_ms":2061.687817,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1}
+{"event_id":76,"virtual_time_ms":2063.916702,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":7,"scenario_id":"SMOKE","seed":1}
+{"event_id":77,"virtual_time_ms":2100,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-6 value-6"}}
+{"event_id":78,"virtual_time_ms":2100,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-6 value-6","command_id":7}}
+{"event_id":79,"virtual_time_ms":2112.903782,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":80,"virtual_time_ms":2113.849626,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":81,"virtual_time_ms":2123.140298,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":82,"virtual_time_ms":2123.140298,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1}
+{"event_id":83,"virtual_time_ms":2123.140298,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":23.140298}}
+{"event_id":84,"virtual_time_ms":2125.415684,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":85,"virtual_time_ms":2161.876807,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1}
+{"event_id":86,"virtual_time_ms":2163.353152,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":8,"scenario_id":"SMOKE","seed":1}
+{"event_id":87,"virtual_time_ms":2200,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-7 value-7"}}
+{"event_id":88,"virtual_time_ms":2200,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-7 value-7","command_id":8}}
+{"event_id":89,"virtual_time_ms":2211.595861,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":90,"virtual_time_ms":2213.31051,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":91,"virtual_time_ms":2224.212304,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":92,"virtual_time_ms":2224.212304,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1}
+{"event_id":93,"virtual_time_ms":2224.212304,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":24.212304}}
+{"event_id":94,"virtual_time_ms":2225.612977,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":95,"virtual_time_ms":2261.763555,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1}
+{"event_id":96,"virtual_time_ms":2262.005382,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":9,"scenario_id":"SMOKE","seed":1}
+{"event_id":97,"virtual_time_ms":2300,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-8 value-8"}}
+{"event_id":98,"virtual_time_ms":2300,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-8 value-8","command_id":9}}
+{"event_id":99,"virtual_time_ms":2310.836251,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":100,"virtual_time_ms":2311.587608,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":101,"virtual_time_ms":2321.011273,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":102,"virtual_time_ms":2321.011273,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1}
+{"event_id":103,"virtual_time_ms":2321.011273,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":21.011273}}
+{"event_id":104,"virtual_time_ms":2322.722898,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":105,"virtual_time_ms":2360.300953,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1}
+{"event_id":106,"virtual_time_ms":2363.964053,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":10,"scenario_id":"SMOKE","seed":1}
+{"event_id":107,"virtual_time_ms":2400,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-9 value-9"}}
+{"event_id":108,"virtual_time_ms":2400,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-9 value-9","command_id":10}}
+{"event_id":109,"virtual_time_ms":2413.073584,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":110,"virtual_time_ms":2414.58019,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":111,"virtual_time_ms":2426.594932,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":112,"virtual_time_ms":2426.594932,"type":"EntryCommitted","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1}
+{"event_id":113,"virtual_time_ms":2426.594932,"type":"ClientCommandCommitted","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":26.594932}}
+{"event_id":114,"virtual_time_ms":2426.862911,"type":"LogReplicated","node_id":"node-1","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-3"}}
+{"event_id":115,"virtual_time_ms":2463.99642,"type":"EntryCommitted","node_id":"node-3","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1}
+{"event_id":116,"virtual_time_ms":2464.851308,"type":"EntryCommitted","node_id":"node-2","term":1,"log_index":11,"scenario_id":"SMOKE","seed":1}
+{"event_id":117,"virtual_time_ms":2500,"type":"ClientCommandAppended","node_id":"node-1","term":1,"log_index":12,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-10 value-10"}}
+{"event_id":118,"virtual_time_ms":2500,"type":"ClientCommandAccepted","node_id":"node-1","term":1,"log_index":12,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-10 value-10","command_id":11}}
+{"event_id":119,"virtual_time_ms":2500,"type":"NodeCrashed","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1,"metadata":{"role":"leader"}}
+{"event_id":120,"virtual_time_ms":2511.295649,"type":"AppendEntriesReceived","node_id":"node-2","term":1,"log_index":12,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":121,"virtual_time_ms":2511.742827,"type":"AppendEntriesReceived","node_id":"node-3","term":1,"log_index":12,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-1"}}
+{"event_id":122,"virtual_time_ms":2722,"type":"ElectionStarted","node_id":"node-3","term":2,"scenario_id":"SMOKE","seed":1,"metadata":{"quorum":2}}
+{"event_id":123,"virtual_time_ms":2722,"type":"NodeRoleChanged","node_id":"node-3","term":2,"scenario_id":"SMOKE","seed":1,"metadata":{"from":"follower","to":"candidate"}}
+{"event_id":124,"virtual_time_ms":2735.843195,"type":"VoteGranted","node_id":"node-2","term":2,"scenario_id":"SMOKE","seed":1,"metadata":{"candidate":"node-3"}}
+{"event_id":125,"virtual_time_ms":2748.889372,"type":"NodeRoleChanged","node_id":"node-3","term":2,"scenario_id":"SMOKE","seed":1,"metadata":{"from":"candidate","to":"leader"}}
+{"event_id":126,"virtual_time_ms":2748.889372,"type":"LeaderElected","node_id":"node-3","term":2,"scenario_id":"SMOKE","seed":1,"metadata":{"quorum":2,"votes_received":2}}
+{"event_id":127,"virtual_time_ms":2760,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-12 value-12"}}
+{"event_id":128,"virtual_time_ms":2760,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-12 value-12","command_id":13}}
+{"event_id":129,"virtual_time_ms":2760,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-11 value-11"}}
+{"event_id":130,"virtual_time_ms":2760,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-11 value-11","command_id":12}}
+{"event_id":131,"virtual_time_ms":2763.105818,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":13,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":132,"virtual_time_ms":2773.319555,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":2,"leader":"node-3"}}
+{"event_id":133,"virtual_time_ms":2774.022014,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":3,"leader":"node-3"}}
+{"event_id":134,"virtual_time_ms":2774.603186,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":13,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":135,"virtual_time_ms":2774.603186,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":13,"scenario_id":"SMOKE","seed":1}
+{"event_id":136,"virtual_time_ms":2774.603186,"type":"ClientCommandCommitted","node_id":"node-3","term":1,"log_index":12,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":274.603186}}
+{"event_id":137,"virtual_time_ms":2783.864843,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":138,"virtual_time_ms":2783.864843,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1}
+{"event_id":139,"virtual_time_ms":2783.864843,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":23.864843}}
+{"event_id":140,"virtual_time_ms":2787.808916,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":141,"virtual_time_ms":2787.808916,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1}
+{"event_id":142,"virtual_time_ms":2787.808916,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":27.808916}}
+{"event_id":143,"virtual_time_ms":2787.973198,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":13,"scenario_id":"SMOKE","seed":1}
+{"event_id":144,"virtual_time_ms":2787.973198,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":2,"leader":"node-3"}}
+{"event_id":145,"virtual_time_ms":2796.097175,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":14,"scenario_id":"SMOKE","seed":1}
+{"event_id":146,"virtual_time_ms":2796.097175,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":147,"virtual_time_ms":2800,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-13 value-13"}}
+{"event_id":148,"virtual_time_ms":2800,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-13 value-13","command_id":14}}
+{"event_id":149,"virtual_time_ms":2813.279696,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":15,"scenario_id":"SMOKE","seed":1}
+{"event_id":150,"virtual_time_ms":2813.279696,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":151,"virtual_time_ms":2820.992421,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":152,"virtual_time_ms":2825.006296,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":153,"virtual_time_ms":2825.006296,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1}
+{"event_id":154,"virtual_time_ms":2825.006296,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":25.006296}}
+{"event_id":155,"virtual_time_ms":2864.584038,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":16,"scenario_id":"SMOKE","seed":1}
+{"event_id":156,"virtual_time_ms":2900,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-14 value-14"}}
+{"event_id":157,"virtual_time_ms":2900,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-14 value-14","command_id":15}}
+{"event_id":158,"virtual_time_ms":2912.976882,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":159,"virtual_time_ms":2926.143085,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":160,"virtual_time_ms":2926.143085,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1}
+{"event_id":161,"virtual_time_ms":2926.143085,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":26.143085}}
+{"event_id":162,"virtual_time_ms":2966.62429,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":17,"scenario_id":"SMOKE","seed":1}
+{"event_id":163,"virtual_time_ms":3000,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-15 value-15"}}
+{"event_id":164,"virtual_time_ms":3000,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-15 value-15","command_id":16}}
+{"event_id":165,"virtual_time_ms":3014.48788,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":166,"virtual_time_ms":3026.754887,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":167,"virtual_time_ms":3026.754887,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1}
+{"event_id":168,"virtual_time_ms":3026.754887,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":26.754887}}
+{"event_id":169,"virtual_time_ms":3066.799905,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":18,"scenario_id":"SMOKE","seed":1}
+{"event_id":170,"virtual_time_ms":3100,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-16 value-16"}}
+{"event_id":171,"virtual_time_ms":3100,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-16 value-16","command_id":17}}
+{"event_id":172,"virtual_time_ms":3113.838637,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":173,"virtual_time_ms":3124.551625,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":174,"virtual_time_ms":3124.551625,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1}
+{"event_id":175,"virtual_time_ms":3124.551625,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":24.551625}}
+{"event_id":176,"virtual_time_ms":3165.79066,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":19,"scenario_id":"SMOKE","seed":1}
+{"event_id":177,"virtual_time_ms":3200,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-17 value-17"}}
+{"event_id":178,"virtual_time_ms":3200,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-17 value-17","command_id":18}}
+{"event_id":179,"virtual_time_ms":3213.917124,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":180,"virtual_time_ms":3226.391689,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":181,"virtual_time_ms":3226.391689,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1}
+{"event_id":182,"virtual_time_ms":3226.391689,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":26.391689}}
+{"event_id":183,"virtual_time_ms":3264.854775,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":20,"scenario_id":"SMOKE","seed":1}
+{"event_id":184,"virtual_time_ms":3300,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-18 value-18"}}
+{"event_id":185,"virtual_time_ms":3300,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-18 value-18","command_id":19}}
+{"event_id":186,"virtual_time_ms":3312.221348,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":187,"virtual_time_ms":3322.437199,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":188,"virtual_time_ms":3322.437199,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1}
+{"event_id":189,"virtual_time_ms":3322.437199,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":22.437199}}
+{"event_id":190,"virtual_time_ms":3362.400981,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":21,"scenario_id":"SMOKE","seed":1}
+{"event_id":191,"virtual_time_ms":3400,"type":"ClientCommandAppended","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-19 value-19"}}
+{"event_id":192,"virtual_time_ms":3400,"type":"ClientCommandAccepted","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"command":"SET key-19 value-19","command_id":20}}
+{"event_id":193,"virtual_time_ms":3413.215816,"type":"AppendEntriesReceived","node_id":"node-2","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":1,"leader":"node-3"}}
+{"event_id":194,"virtual_time_ms":3424.621906,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-2"}}
+{"event_id":195,"virtual_time_ms":3424.621906,"type":"EntryCommitted","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1}
+{"event_id":196,"virtual_time_ms":3424.621906,"type":"ClientCommandCommitted","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"latency_ms":24.621906}}
+{"event_id":197,"virtual_time_ms":3466.068891,"type":"EntryCommitted","node_id":"node-2","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1}
+{"event_id":198,"virtual_time_ms":4000,"type":"NodeRestarted","node_id":"node-1","term":1,"scenario_id":"SMOKE","seed":1}
+{"event_id":199,"virtual_time_ms":4015.526111,"type":"EntryCommitted","node_id":"node-1","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1}
+{"event_id":200,"virtual_time_ms":4015.526111,"type":"AppendEntriesReceived","node_id":"node-1","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"entries":10,"leader":"node-3"}}
+{"event_id":201,"virtual_time_ms":4028.452154,"type":"LogReplicated","node_id":"node-3","term":2,"log_index":22,"scenario_id":"SMOKE","seed":1,"metadata":{"follower":"node-1"}}
