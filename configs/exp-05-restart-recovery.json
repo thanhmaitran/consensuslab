@@ -1,0 +1,15 @@
+{
+  "id": "EXP-05",
+  "description": "A follower crashes, the cluster keeps committing, then the follower restarts and must catch up. Measures time until every node has the same log and commit index.",
+  "node_counts": [3, 5],
+  "seeds": 30,
+  "seed_base": 1,
+  "duration_ms": 12000,
+  "election_timeout_ms": [150, 300],
+  "heartbeat_ms": 50,
+  "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0 },
+  "faults": [
+    { "at_ms": 3000, "type": "crash", "node_id": "node-3", "restart_after_ms": 4000 }
+  ],
+  "workload": { "commands": 100, "start_ms": 2000, "interval_ms": 60 }
+}

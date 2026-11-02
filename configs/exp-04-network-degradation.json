@@ -1,0 +1,19 @@
+{
+  "id": "EXP-04",
+  "description": "Increasing delay, jitter and message loss on a 5-node cluster without crashes.",
+  "node_counts": [5],
+  "seeds": 30,
+  "seed_base": 1,
+  "duration_ms": 15000,
+  "election_timeout_ms": [150, 300],
+  "heartbeat_ms": 50,
+  "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0 },
+  "variants": [
+    { "name": "delay10-loss0", "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0 } },
+    { "name": "delay30-loss0", "network": { "base_delay_ms": 30, "jitter_ms": 10, "message_loss_probability": 0 } },
+    { "name": "delay10-loss5", "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0.05 } },
+    { "name": "delay10-loss20", "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0.2 } },
+    { "name": "delay60-loss10", "network": { "base_delay_ms": 60, "jitter_ms": 20, "message_loss_probability": 0.1 } }
+  ],
+  "workload": { "commands": 100, "start_ms": 3000, "interval_ms": 50 }
+}

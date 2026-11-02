@@ -1,0 +1,16 @@
+{
+  "id": "EXP-03B",
+  "description": "A 5-node cluster is split 2/2/1 so that no group has a quorum, then healed. Commands cannot commit during the partition; safety must still hold.",
+  "node_counts": [5],
+  "seeds": 30,
+  "seed_base": 1,
+  "duration_ms": 12000,
+  "election_timeout_ms": [150, 300],
+  "heartbeat_ms": 50,
+  "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0 },
+  "faults": [
+    { "at_ms": 3000, "type": "partition", "group_sizes": [2, 2, 1] },
+    { "at_ms": 7000, "type": "heal" }
+  ],
+  "workload": { "commands": 100, "start_ms": 2000, "interval_ms": 80 }
+}

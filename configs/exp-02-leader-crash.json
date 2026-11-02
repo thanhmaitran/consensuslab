@@ -1,0 +1,13 @@
+{
+  "id": "EXP-02",
+  "description": "The leader crashes after the cluster has stabilised and never comes back. Measures re-election latency and the time until the surviving quorum is stable again.",
+  "node_counts": [3, 5, 7],
+  "seeds": 30,
+  "seed_base": 1,
+  "duration_ms": 10000,
+  "election_timeout_ms": [150, 300],
+  "heartbeat_ms": 50,
+  "network": { "base_delay_ms": 10, "jitter_ms": 5, "message_loss_probability": 0 },
+  "faults": [{ "at_ms": 3000, "type": "crash_leader" }],
+  "workload": { "commands": 100, "start_ms": 2000, "interval_ms": 50 }
+}
