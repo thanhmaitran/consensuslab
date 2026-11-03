@@ -1,0 +1,8 @@
+experiment_id,node_count,fault_removal_ms,last_command_ms,runs_with_recovery,min_stable_minus_last_command_ms,median_stable_minus_last_command_ms,max_stable_minus_last_command_ms,median_recovery_time_ms
+EXP-02,3,3000,6950,30,60.006,63.6497,66.0852,4013.65
+EXP-02,5,3000,6950,30,63.0086,65.3249,67.714,4015.32
+EXP-02,7,3000,6950,30,63.9457,67.1292,70.9487,4017.13
+EXP-03,5,7000,9920,30,-2898,-2894.41,-2892.09,25.5863
+EXP-03B,5,7000,9920,30,-2814.42,-2655.91,-2255.4,264.087
+EXP-05,3,7000,7940,30,61.5512,64.2476,65.9766,1004.25
+EXP-05,5,7000,7940,30,62.4749,65.2333,68.9783,1005.23
