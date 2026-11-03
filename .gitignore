@@ -1,0 +1,46 @@
+# Build artifacts
+/bin/
+/build/
+/dist/
+/coverage/
+/tmp/
+
+# Test and experiment output
+*.test
+*.prof
+*.out
+*.log
+/results/raw/
+/results/tmp/
+
+# Keep the local validation logs as evidence
+!results/local-validation/*.log
+
+# Frontend
+node_modules/
+web/dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Go / coverage output
+*.exe
+/coverage
+/coverage.html
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+
+# Temporary files
+*.tmp
